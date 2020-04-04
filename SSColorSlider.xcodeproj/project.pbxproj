@@ -15,6 +15,9 @@
 		4950709F243896DB00FAB97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4950709D243896DB00FAB97C /* Main.storyboard */; };
 		495070A1243896DB00FAB97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495070A0243896DB00FAB97C /* Assets.xcassets */; };
 		495070A4243896DB00FAB97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495070A2243896DB00FAB97C /* LaunchScreen.storyboard */; };
+		496421A324389BE7004D1DF5 /* SSColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496421A124389BE7004D1DF5 /* SSColorSlider.swift */; };
+		496421A424389BE7004D1DF5 /* SSIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496421A224389BE7004D1DF5 /* SSIndicatorView.swift */; };
+		496421A624389BFC004D1DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496421A524389BFC004D1DF5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		495070A0243896DB00FAB97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495070A3243896DB00FAB97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495070A5243896DB00FAB97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496421A124389BE7004D1DF5 /* SSColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSColorSlider.swift; sourceTree = "<group>"; };
+		496421A224389BE7004D1DF5 /* SSIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSIndicatorView.swift; sourceTree = "<group>"; };
+		496421A524389BFC004D1DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				4950707C243896BA00FAB97C /* SSColorSlider.h */,
+				4964219F24389BE7004D1DF5 /* Assets */,
+				496421A024389BE7004D1DF5 /* Source */,
 				4950707D243896BA00FAB97C /* Info.plist */,
 			);
 			path = SSColorSlider;
@@ -118,6 +126,23 @@
 				495070A5243896DB00FAB97C /* Info.plist */,
 			);
 			path = SSColorSliderDemo;
+			sourceTree = "<group>";
+		};
+		4964219F24389BE7004D1DF5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				496421A524389BFC004D1DF5 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		496421A024389BE7004D1DF5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				496421A124389BE7004D1DF5 /* SSColorSlider.swift */,
+				496421A224389BE7004D1DF5 /* SSIndicatorView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496421A624389BFC004D1DF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496421A424389BE7004D1DF5 /* SSIndicatorView.swift in Sources */,
+				496421A324389BE7004D1DF5 /* SSColorSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +497,7 @@
 		49507091243896BA00FAB97C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SSColorSliderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +511,7 @@
 		49507092243896BA00FAB97C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SSColorSliderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
